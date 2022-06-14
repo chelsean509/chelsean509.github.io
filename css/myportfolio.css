@@ -225,6 +225,7 @@ nav{
 #navbar-logo{
 	width: auto;
 	height: 8vh;
+	max-width: 8vh;
 }
 
 #navbar-logo:hover{

@@ -10,7 +10,7 @@ body{
 	background: #FFFFFF;
 	color: #393232;
 	font-family: 'Quicksand';
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 300;
 	letter-spacing: 0.05em;
 
@@ -26,14 +26,14 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	color: #292929;
 	font-family: 'Play';	
-	font-size: 75px;
+	font-size: 4.688rem;
 	font-weight: 300;
 }
 
 h2{
 	color: #292929;
 	font-family: 'Quicksand';
-	font-size: 39px;
+	font-size: 2.438rem;
 	font-weight: 300;
 
 }
@@ -41,7 +41,7 @@ h2{
 h3{
 	color: #292929;
 	font-family: 'Quicksand';
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 600;
 }
 
@@ -67,10 +67,10 @@ ul {
 p {
 	margin: 0 0;
 	padding: 0;
-	font-size: 15px;
+	font-size: 0.93rem;
 	font-weight: 300;
 	color: #5A5A5A;
-	line-height: 28px;
+	line-height: 1.75rem;
 }
 
 /* Pages */
@@ -101,7 +101,7 @@ p {
 *******************************************/
 .container-center{
 	max-width: 65%;
-	margin: 100px auto;	
+	margin: 6rem auto;	
 	padding: 0 0;
 }
 
@@ -160,10 +160,10 @@ p {
 .col-30-70 p{
 	margin: 0 0;
 	padding: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
 	color: #5A5A5A;
-	line-height: 25px;
+	line-height: 1.56rem;
 }
 .container-rows{
 	display: flex;
@@ -206,7 +206,7 @@ nav{
 	background-color: #FFFFFF;
 	width: 100%;
 	height: 3.5rem;
-	padding: 10px 0px;
+	padding: 0.625rem 0rem;
 	z-index: 1;
 	box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
 }
@@ -218,11 +218,12 @@ nav{
 #navbar-home:hover{
 	transform:scale(1.02);
 	transition: all 0.2s ease-in-out 0s;
+	background-color: #acd595;
 }
 
 #navbar-logo{
 	width: auto;
-	height: 50px;
+	height: 3.125rem;
 }
 
 #navbar-logo:hover{
@@ -239,7 +240,7 @@ nav{
 }
 
 #navbar-links a{
-	margin-left: 50px;
+	margin-left: 3.125rem;
 }
 #navoption {
 	box-shadow: inset 0 0 0 0 #acd595;
@@ -362,12 +363,12 @@ nav{
 
 #portfolio-list li{
 	position: relative;
-	padding: 15px;
+	padding: 0.93rem;
 }
 
 #portfolio-list a{
 	position: relative;
-	max-width: 400px;
+	max-width: 25rem;
 	display: block;
 	cursor: pointer;
 }
@@ -420,7 +421,7 @@ nav{
 }
 
 #skills-list h3{
-	padding: 10px 0;
+	padding: .625rem 0;
 }
 
 
@@ -454,7 +455,7 @@ nav{
 }
 
 #tools-list h3{
-	padding: 10px 0;
+	padding: 0.625rem 0;
 }
 
 
@@ -473,11 +474,11 @@ nav{
 }
 
 #contacts-icons{
-	padding: 20px 5vw;
-	font-size: 30px;
+	padding: 1.25rem 5vw;
+	font-size: 1.875rem;
 }
 
 #contacts-content p{
-	padding-bottom: 15px;
+	padding-bottom: 0.9375rem;
 	font-family: 'Poppins' Helvetica;	
 }

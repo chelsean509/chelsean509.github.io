@@ -65,7 +65,7 @@ ul {
 #socialmedia:focus {
 	color: #acd595;
 }
-#navoption {
+/*#navoption {
 	color: #292929;
 	text-decoration: none !important;
 	transition: all 0.2s ease-in-out 0s;
@@ -74,12 +74,23 @@ ul {
 #navoption:hover {
 	transition: all 0.2s ease-in-out 0s;
 	color: #acd595;	
-	font-size: 2rem;
 }
 
 #navoption:focus {
 	color: #acd595;
 }
+*/
+#navoption {
+	box-shadow: inset 0 0 0 0 #acd595;
+	margin: 0 -.25rem;
+	padding: 0 .25rem;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	color:#292929;
+  }
+#navoption:hover {
+	background-color: #acd595;
+  }
+
 p {
 	margin: 0 0;
 	padding: 0;
@@ -234,6 +245,7 @@ nav{
 #navbar-home:hover{
 	transform:scale(1.02);
 	transition: all 0.2s ease-in-out 0s;
+	background-color: #acd595;
 }
 
 #navbar-logo{

@@ -136,6 +136,7 @@ p {
 	flex-direction: row;
 	margin: 0 auto;
 	justify-content: space-between;
+	height: 9vh;
 }
 
 .container-center{
@@ -249,7 +250,7 @@ nav{
 
 #navbar-logo{
 	width: auto;
-	height: 3.125rem;
+	height: 8vh;
 }
 
 #navbar-logo:hover{
@@ -266,7 +267,7 @@ nav{
 }
 
 #navbar-links a{
-	margin-left: 3.125rem;
+	margin-left: 5vh;
 }
 
 

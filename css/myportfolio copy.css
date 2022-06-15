@@ -17,6 +17,22 @@ body{
 	height: 100%;
 	margin: 0; 
 }
+a:link { 
+	text-decoration: none; 
+}
+
+a:visited { 
+	text-decoration: none;
+	color: #292929; 
+}
+
+a:hover { 
+	text-decoration: none; 
+}
+
+a:active { 
+	text-decoration: none; 
+}
 
 h1, h2, h3, h4, h5, h6{
 	margin: 0;
@@ -71,21 +87,7 @@ ul {
 #socialmedia:focus {
 	color: #acd595;
 }
-/*#navoption {
-	color: #292929;
-	text-decoration: none !important;
-	transition: all 0.2s ease-in-out 0s;
-}
 
-#navoption:hover {
-	transition: all 0.2s ease-in-out 0s;
-	color: #acd595;	
-}
-
-#navoption:focus {
-	color: #acd595;
-}
-*/
 #navoption {
 	box-shadow: inset 0 0 0 0 #acd595;
 	margin: 0 -.25rem;
@@ -116,7 +118,11 @@ p {
 	width: 100%;
 	height: 70vh;
 }
-
+.semihalfpage{
+	width: 100%;
+	height: 90vh;
+	padding: 10vh 0;
+}
 .halfpage{
 	width: 100%;
 	height: 60vh;
@@ -125,8 +131,38 @@ p {
 
 .quarterpage{
 	width: 100%;
+	height: 100%;
+	padding: 5vh 0 0 0;
+}
+
+.eighthpage {
+	width: 100%;
 	height: 20vh;
 	padding: 5vh 0 0 0;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5vh 2vh;
+	z-index: 1;
+	font-size: 3vh;
+	flex-direction: column;
+	white-space: break-spaces;
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+  }
+.dropdown-content a:hover {
+	background-color: #acd959;
 }
 
 /*******************************************
@@ -273,9 +309,21 @@ nav{
 	font-size: 3.2vh;
 }
 
-#navbar-links a{
+/*#navbar-links a{
 	margin-left: 5vh;
-}
+}*/
+
+#navoption {
+	box-shadow: inset 0 0 0 0 #acd595;
+	margin: 0 -.25rem;
+	padding: 0 .25rem;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+	color:#292929;
+	margin-right: 5vh;
+  }
+#navoption:hover {
+	background-color: #acd595;
+  }
 
 
 /*****************************************
@@ -289,27 +337,38 @@ nav{
 	background-size: cover;
 	background-position: center;
 
-	height: 60%;
+	height: 104vh;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
 	overflow: hidden;
 	filter: blur(2px);
 }
+
 .banner {
 	background-color: #F8F7F3;
 	background-image: url('/resources/leafbackground.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-
-	height: 85%;
-	overflow: hidden;
-	filter: blur(2px);
+		filter:blur(2px);
+	height: 50vh;
+/*	overflow: hidden; */
 }
 
 #intro {	
 	top: 30%;
-	left: 25%;
+	left: 28%;
 	position: absolute;	
 	transform: translate(-50%, -50%);
+
+}
+#bannercontent {	
+	left: 25%;
+	line-height: 3.5rem;
+	position: absolute;	
+	transform: translate(-50%, -350%);
 }
 
 #intro h1{
@@ -373,9 +432,17 @@ nav{
 #page3{
 	background-color: rgba(248, 247, 243);
 }
+#portfolio-heading{
+	align-content:center;
+	text-align: center;
+}
 
 #portfolio-content{
 	padding-top: 10vh;
+	width: 100%;
+}
+#portfolio-content0{
+	padding-top: 0vh;
 	width: 100%;
 }
 
@@ -383,11 +450,12 @@ nav{
 	padding: 0 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #portfolio-list li{
 	position: relative;
-	padding: 0.625rem;
+	padding: 2vh;
 }
 
 #portfolio-list a{
@@ -396,7 +464,10 @@ nav{
 	display: block;
 	cursor: pointer;
 }
-
+#portfolio-list a:hover{
+	transform:scale(1.02);
+	transition: all 0.2s ease-in-out 0s;
+}
 #portfolio-list socialmedia:hover .overlay{
 	opacity: 0.75;
 }
@@ -404,6 +475,13 @@ nav{
 #portfolio-list img{
 	height: 23vh;
 	width: 20vw;
+}
+
+#portfolio-list img{
+	height: auto;
+	width: 28vw;
+	border-radius: 10%;
+	box-shadow: 1px 0px 10px 0px grey;
 }
 
 /**************************************
@@ -475,12 +553,17 @@ nav{
 # Contact
 *************************************/
 
-#contacts-content{
+#contacts-content0{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
+#contacts-content{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
 #contacts-list{
 	padding: 0;
 }
@@ -492,6 +575,5 @@ nav{
 
 #contacts-content p{
 	padding-bottom: 0.938rem;
-	font-family: 'Poppins' Helvetica;
-	text-transform: uppercase;		
+	font-family: 'Poppins' Helvetica;	
 }

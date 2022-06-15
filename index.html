@@ -8,36 +8,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/myportfolio.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/myportfolio copy.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
-	<script src="https://kit.fontawesome.com/e9aed3c18c.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/d54ca418ec.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="jquery-3.5.1.min.js"></script>
 </head>
 
 <body id="main">
 
-	<!-------------------->
-	<!-- Navigation Bar -->
-	<!-------------------->
+<!-------------------->
+<!-- Navigation Bar -->
+<!-------------------->
 	<header>
 	<nav class = "container-split" id="navbar">
-		<a id="navbar-home" href="index.html"><img src="resources/house.png" id="navbar-logo"></a>
+		<a id="navbar-home" href="#nav00"><img src="resources/house.png" id="navbar-logo"></a>
 		<ul id="navbar-links">
-			<li><a id="navoption" href="#nav0">Cover Page</a></li>
-			<li><a id="navoption" href="#nav00">Resources</a></li>
-			<li><a id="navoption" href="#nav000">About</a></li>
+			<li class="dropdown"><a id="navoption" href="#nav-mh">Mental Health</a> 
+				<div class="dropdown-content"><a href="#mh-1">Remote Support</a>
+				<a href="#mh-2">Low-cost Therapy</a>
+				<a href="#mh-3">AAPI Community</a></div></li>
+			<li class="dropdown"><a id="navoption" href="#nav-ss">Social Services</a>
+				<div class="dropdown-content"><a href="#ss-1">Homelessness</a>
+				<a href="#ss-2">Food Distribution</a>
+				<a href="#ss-3">Parenting Classes</a>
+				<a href="#ss-4">Residential Program</a></div></li>
+			<li class="dropdown"><a id="navoption" href="#nav-aca">Academic</a>
+				<div class="dropdown-content"><a href="#aca-1">Career Enrichment/Mentoring</a>
+					<a href="#aca-2">Afterschool Program</a></div></li>
+			<li class="dropdown"><a id="navoption" href="#nav-md">Medical & Dental</a>
+				<div class="dropdown-content"><a href="#md-1">Reproductive Health</a></div></li>
+			<li><a id="navoption" href="#nav-a">About</a></li>
 		</ul>
 	</nav>
 	</header>
 
-	<!----------->
-	<!-- Intro -->	
-	<!----------->
+<!---------------->
+<!-- Cover Page -->	
+<!---------------->
 	<main>
-	<div id="nav0"></div>
 	<div class="fullpage" id="page1">
 		<div class="background"></div>
 		<article class="container-split" id="intro">	
@@ -50,22 +61,21 @@
 		</article>
 	</div>
 
-	<!--------------->
-	<!-- Portfolio -->
-	<!--------------->
-	<!-- Consider going back to fix the overlay section -->
+<!--------------->
+<!-- Resources -->
+<!--------------->
 	<div id="nav00"></div>
 	<br>
 	<div id="page2">
-	<div class="halfpage" id="page3">
+	<div class="semihalfpage" id="page3">
 		<article class="container-center" id="portfolio">
 			<section id="portfolio-heading">
 				<h2>What kind of resource are you looking for? </h2>
 			</section>
-			<section class = "container-columns" id="portfolio-content">
+			<section class = "container-columns" id="portfolio-content0">
 				<ul id="portfolio-list">
 					<li>
-						<a href="mentalhealth.html" class="portfolio-link">
+						<a href="#nav-mh" class="portfolio-link">
 							<div class="overlay"><div class="overlay-center">
 							<i class="fas fa-external-link-alt"></i>
 							</div></div>
@@ -74,13 +84,13 @@
 						</a>
 					</li>
 					<li>
-						<a href="socialservices.html" class="portfolio-link">
+						<a href="#nav-ss" class="portfolio-link">
 							<div class="overlay"><div class="overlay-center">
 							<i class="fas fa-external-link-alt"></i>
 							</div></div>
 							<img src="/resources/button_ss.png">
 							<li>
-								<a href="academic.html" class="portfolio-link">
+								<a href="#nav-aca" class="portfolio-link">
 									<div class="overlay"><div class="overlay-center">
 									<i class="fas fa-external-link-alt"></i>
 									</div></div>
@@ -89,7 +99,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="medicaldental.html" class="portfolio-link">
+								<a href="#nav-md" class="portfolio-link">
 									<div class="overlay"><div class="overlay-center">
 									<i class="fas fa-external-link-alt"></i>
 									</div></div>
@@ -99,19 +109,485 @@
 				</ul>
 			</section>
 		</article>
-		<div id="nav000"></div>
 	</div>
+	</div>
+<!--------------->
+<!-- MH BANNER -->	
+<!--------------->
+<main>
+	<div id="nav-mh"></div>
+	<div class="semifullpage">
+		<div class="banner"></div>
+			<article class="container-split" id="bannercontent">	
+				<h1>Mental Health <br>Resources </h1>
+				<br><br>
+		</article>
+		</div>
 	</div>
 
-	<!------------->
-	<!-- Contact -->
-	<!------------->
-	<div class="quarterpage" id="page6">
+<!---------------->
+<!-- MH SOURCE1 -->
+<!---------------->
+<div id="mh-1"></div>
+	<div id="page2">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+            <h3><b>National Alliance on Mental Illness of Orange County (NAMI OC)</b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">
+				<a href="https://www.namioc.org/" target="_blank"><img id="picture" src="/resources/logo05.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Abby Nemeth <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-544-8488"> 714-544-8488 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.namioc.org/" target="_blank"> www.namioc.org/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: info@namioc.org" target="_blank"> info@namioc.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=1810 East 17th Street Santa Ana, CA.  92705" target="_blank"> 1810 East 17th Street Santa Ana, CA.  92705 </a><br>
+                <b>Hours:</b> Office is open Monday - Friday, 9am - 5pm <br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> provides Zoom support groups, a peer connector program for mentorship, and OC Warmline (a 24/7 telephone service providing emotional support)<br>
+                <b>District partnership:</b> Unknown
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For students or parents who are in need of additional emotional support, contact Abby Nemeth at NAMI OC. NAMI OC provides residents of Orange County a variety of free and accessible emotional support options such as opportunities for Zoom support groups, a Peer Connector Program for mentorship, and a 24/7 free and confidential telephone service for emotional support (OC Warmline). The staff at NAMI OC rely on its event managers for planning, however much of the support comes from volunteers that help with providing emotional support through the OC Warmline. Services are provided in English, Arabic, Farsi, Korean, Spanish, Vietnamese, and Mandarin. There are no fees or costs associated with receiving assistance from NAMI OC. There are no referral services, however students and adults who are in need of accessible emotional support are encouraged to seek out NAMI OC's free resources. Overall, NAMI OC is both a culturally appropriate and important resource for the community. The Warmline may take a while to connect to someone at times, as staffing is limited. Having a backup support is highly recommended. </p>
+                <div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/NAMIOC" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/NAMIOrangeCounty/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/nami_oc/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/channel/UCkDz_nxA20kiST1gZaaBx-A" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+					<a id="socialmedia" href="https://www.tiktok.com/@nami_oc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!---------------->
+<!-- MH SOURCE2 -->
+<!---------------->
+<div id="mh-2"></div>
+	<div id="page3">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>Western Youth Services </b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://www.westernyouthservices.org/" target="_blank"><img id="picture" src="/resources/logo06.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Camille Kallas <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:888-312-0406"> 888-312-0406 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.westernyouthservices.org/" target="_blank"> www.westernyouthservices.org/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: info@westernyouthservices.org" target="_blank"> info@westernyouthservices.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="https://www.westernyouthservices.org/about-wys/our-locations/" target="_blank"> vary locations </a><br>
+                <b>Hours:</b> Monday-Friday 8am-5pm <br>
+                <b>Fees:</b> depends on insurance <br>
+                <b>Services:</b> outpatient mental health services for Medi-Cal eligible clients up to age twenty-one years old <br>
+                <b>District partnership:</b> yes, <a id="socialmedia" href="https://www.auhsd.us/" target="_blank"> AUHSD </a>
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>Youth below the age of 21 looking for low-cost mental health services, contact Camille Kallas at Western Youth Services. Western Youth Services offers therapy for students from low-income families through their Medi-Cal outpatient clinics, along with providing crisis intervention trainings, and school-based services. Western Youth Services' staffing consists of Psychologists, Psychiatric/Mental health nurse practitioners, and Licensed Clinicians. A bachelors is required to apply, and proper licensing is necesasry depending on the employement role. Hours of service are Mondays to Fridays, 8am to 5pm. Western Youth Services accomodates for English, Spanish, Farsi, Korean, Vietnamese, Arabic, and Mandarin. Costs of services depend on if a youth has Medi-Cal, CalOptima, or any other form of insurance. To make a referral, either call <a id="socialmedia" href="tel:838-312-0406"> 838-312-0406 </a>or email <a id="socialmedia" href="mailto: gethelp@westernyouthservices.org" target="_blank"> gethelp@westernyouthservices.org. </a> Western Youth Services is both a culturally appropriate and important resource for the community. </p>
+				<div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/WesternYouthOC" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/WesternYouthOC/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/WesternYouthOC/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.linkedin.com/company/western-youth-services/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<br>
+            </div>
+		</div>
+        </article>
+	</div>
+<!---------------->
+<!-- MH SOURCE3 -->
+<!---------------->
+<div id="mh-3"></div>
+	<div id="page4">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>Orange County Asian and Pacifica Islanders Community Alliance (OCAPICA) </b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://www.ocapica.org/mentalhealth.html" target="_blank"><img id="picture" src="/resources/logo07.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Rebecca Park <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-636-6286"> 714-636-6286 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.ocapica.org/mentalhealth.html" target="_blank"> www.ocapica.org/mentalhealth.html </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: ocapica@ocapica.org" target="_blank"> ocapica@ocapica.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=12912 Brookhurst St., Suite #480, Garden Grove, CA 92840" target="_blank"> 12912 Brookhurst St., Suite #480, Garden Grove, CA 92840 </a><br>
+                <b>Hours:</b> Office open Monday-Thursdays 8am-5:30pm <br>
+                <b>Fees:</b> yes for therapy/counseling services, free workshops available <br>
+                <b>Services:</b> provides mental health workshops, mental health services, and enrichment opportunities for Orange County's Asian and Pacific Islander community <br>
+                <b>District partnership:</b> yes, <a id="socialmedia" href="https://www.auhsd.us/" target="_blank"> AUHSD </a>
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For Orange County residents from the Asian and Pacific Islander community in need of mental health support, contact Rebecca Park at OCAPICA. OCAPICA's Well(ness)essity program offers short-term case management, short-term counseling, mental health screenings, educational workshops, and free consultations for emotional support and resource help. OCAPICA's staff consists of personal services coordinators, housing resource partners, case managers, and workforce support assistant. Additional support through volunteers and interns are also greatly appreciated. OCAPICA's offices are open from Monday to Fridays, 8am to 5:30pm. OCAPICA provides service in English, Korean, and Vietnamese. OCAPICA takes CalOptima and other forms of insurance for the paid, mental health services. Referrals can be made through this form (<a id="socialmedia" href="https://www.ocapica.org/uploads/1/3/1/1/131169935/project-focus-referral-form-august-2017.pdf">here</a>). Because of the large and growing population of AAPI communities in Orange County, OCAPICA's is both a culturally appropriate and important resource. </p>
+                <br><br>
+				<div class="container-rows" id="contacts-icons"
+					<a id="socialmedia" href="https://twitter.com/ocapica97/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/OCAPICA/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/ocapica97/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/user/TheOCAPICA" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!--------------->
+<!-- SS BANNER -->	
+<!--------------->
+<main>
+	<div id="nav-ss"></div>
+	<div class="semifullpage" id="page1">
+		<div class="banner"></div>
+		<article class="container-split" id="bannercontent">	
+				<h1>Social Services <br>Resources </h1>
+				<br><br>
+		</article>
+	</div>
+
+<!---------------->
+<!-- SS SOURCE1 -->
+<!---------------->
+<div id="ss-1"></div>
+	<div id="page2">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+            <h3><b>OC Rescue Mission</b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">
+				<a href="https://www.rescuemission.org" target="_blank"><img id="picture" src="/resources/logo01.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Latisha Marshall <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:1-800-663-3074"> 1-800-663-3074 </a> or <a id="socialmedia" href="tel:714-247-4379"> 714-247-4379 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.rescuemission.org" target="_blank"> www.rescuemission.org </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: admissions@rescuemission.org" target="_blank"> admissions@rescuemission.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=1 Hope Dr, Tustin 92782" target="_blank"> 1 Hope Dr, Tustin 92782 </a><br>
+                <b>Hours:</b> Monday - Friday, 8am - 4pm <br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> provides housing for homeless, and services such as meals, clothing, medical support, counseling, life skills, education, etc. for residents <br>
+                <b>District partnership:</b> Unknown
+				<br><br>
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For students who are homeless or are at risk of homelessness, contact Latisha Marshall at OC Rescue Mission. OC Rescue Mission provides meals, clothing, medical care, life skills, counseling, and more to its residents. The staff consist of a case manager, front desk workers, county worker, and a sizable population of volunteers who aid in the kitchen, warehouses, and in childcare. OC Rescue Mission is available Mondays to Fridays from 8am to 4pm. As of now, they only provide services in English. There are no fees or costs associated with receiving assistance from OC Rescue Mission. There are no referral services, however students and adults can walk in for their first intake pre-screening. Aside from the lack of language accomodations, OC Rescue Mission is both a culturally appropriate and important resource for the community. </p>
+                <br><br>
+				<div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/RescueMissionOC" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/orangecountyrescuemission" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/ocrescuemission/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/user/OCRescueMission/videos" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!---------------->
+<!-- SS SOURCE2 -->
+<!---------------->
+<div id="ss-2"></div>
+	<div id="page3">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>Second Harvest Food Bank </b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://www.feedoc.org/" target="_blank"><img id="picture" src="/resources/logo02.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Malia Cary <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:949-653-2900"> 949-653-2900 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.feedoc.org/" target="_blank"> www.feedoc.org </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: info@feedoc.org" target="_blank"> info@feedoc.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=8014 Marine Way, Irvine, CA 92618-2235" target="_blank"> 8014 Marine Way, Irvine, CA 92618 </a><br>
+                <b>Hours:</b> <a id="socialmedia" href="https://na0.icarol.info/resourceview2.aspx?First=1&country=United%20States&sp=CA&county=Orange&city=-1&org=2287&agencynum=49521394 " target="_blank"> distribution schedule </a><br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> distributes food at local school sites to families in Orange County <br>
+                <b>District partnership:</b> Unknown
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For families who are struggling or in need of food resources, contact Malia Cary at Second Harvest Food Bank. Second Harvest Food Bank hosts multiple food distributions a month for families in need of extra food resources. Staffing at Second Harvest Food Bank are mostly volunteers, accepting applicants from as young as 13 years old to aid in the farms or at the food distribution events. The distribution days and hours are dependent of each school site (check <a id="socialmedia" href="https://na0.icarol.info/resourceview2.aspx?First=1&country=United%20States&sp=CA&county=Orange&city=-1&org=2287&agencynum=49521394 " target="_blank"> here</a>). As of now, they only provide services in English, however volunteers may provide additional language support. There are no fees or costs associated with receiving assistance from Second Harvest Food Bank. There are no referral services, but parents and students are encouraged to check the distribution schedules if they are in need. Second Harvest Food Bank is both a culturally appropriate and important resource for the community. </p>
+                <div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/SecondHarvestFB" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/SecondHarvestFoodBankOC/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/secondharvestfoodbankoc/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/user/FeedOCdotORG" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+					<a id="socialmedia" href="https://www.linkedin.com/company/second-harvest-food-bank-of-orange-county/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!---------------->
+<!-- ss SOURCE3 -->
+<!---------------->
+<div id="ss-3"></div>
+	<div id="page4">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>North Orange Continuing Education (NOCE)</b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://noce.edu/programs/parenting/" target="_blank"><img id="picture" src="/resources/logo04.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Linda Langgley <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-808-49090"> 714-808-4909 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://noce.edu/programs/parenting/" target="_blank"> www.noce.edu/programs/parenting/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: parenting@noce.edu" target="_blank"> parenting@noce.edu </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=1830 W Romneya Drive, First Floor, East Entrance Anaheim, CA 92801" target="_blank"> 1830 W Romneya Drive, First Floor, East Entrance Anaheim, CA 92801 </a><br>
+                <b>Hours:</b> Monday-Thursdays 8am-5pm, Friday 8am-4pm <br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> provides tuition-free parenting courses <br>
+                <b>District partnership:</b> Unknown 
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For parentings interesting at free parening classes, contact Linda Langgle at NOCE. NOCE delivers multiple tuition-free parenting courses, some of which can be taken with children as well. Some example of the available courses are: Joyful Parenting, Developmental Movement, Building Trauma-Informed Communities, and Connected Parenting. Classes are instructed by Erin Sherard, a professor at NOCE. To find the class schedule for a particular quarter, please refer to the catalogue found (<a id="socialmedia" href="https://noce.edu/wp-content/uploads/2022/03/2022-NOCE-SUMMER-Schedule.pdf" target="_blank">here</a>). NOCE provides translation services in English Arabic, Chinese, English, Filipino, Korean, Persian, Spanish, and Vietnamese. There are no referral services, but parents who are interested are encouraged to either check NOCE's website or contact NOCE for more information. With the wide variety of language accomodations and flexible class schedules, NOCE's Parenting Program is both a culturally appropriate and important resource for the community. </p>
+               <br>
+				<div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/noce_edu" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/noce.edu/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/noce_edu/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/user/schoolcontinuinged/videos" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!---------------->
+<!-- SS SOURCE4 -->
+<!---------------->
+<div id="ss-4"></div>
+	<div id="page3">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>Boys Hope Girls Hope of Southern California (BHGH SoCal) </b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://bhghsocal.org/" target="_blank"><img id="picture" src="/resources/logo09.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Briana Ramirez <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:949-515-8833"> 949-515-8833 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://bhghsocal.org/" target="_blank"> www.bhghsocal.org/connect/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: brianaramirez@bhgh.org" target="_blank"> brianaramirez@bhgh.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=17701 Cowan Ave. Suite 150
+				Irvine, CA 92614" target="_blank">17701 Cowan Ave. Suite 150
+				Irvine, CA 92614</a><br>
+                <b>Hours:</b> Monday-Friday 8am-8pm <br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> residential program for students in middle school to high school <br>
+                <b>District partnership:</b> Unknown
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For teens in middle school to high school with a drive for academic success regardless of background, contact Briana Ramirez at BHGH SoCal. BHGH is a residential program that offers support, resources, and connections. BHGH aims to support those from troubled, low-income and guide them towards success into secondary education. BHGH staffing consists of Residential Counselors and Academic Counselors. A high school education or equivalent is required to apply, and experience working with youth is preferred. Volunteers for tutors and mentors are also greatly appreciated. As it is a residential program, scholars will be mostly staying in the provided housing and allowed home visits. BHGH accomodates for both English and Spanish. There are no fees or costs associated with receiving services from BHGH. Referrals can be made on the website (<a id="socialmedia" href="https://bhghsocal.org/refer-a-child/">here</a>). As it allows academic opportunities targeting those from low-income backgrounds, BHGH is both a culturally appropriate and important resource for the community. </p>
+                <div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/bhghsocal" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/BHGHSoCal" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="https://www.instagram.com/bhghsocal/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/channel/UCBcj7pG1O8ZnJEq5BnB2EwQ" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!-------------->
+<!-- A BANNER -->	
+<!-------------->
+<main>
+	<div id="nav-aca"></div>
+	<div class="semifullpage">
+		<div class="banner"></div>
+		<article class="container-split" id="bannercontent">	
+				<h1>Academic <br>Resources </h1>
+				<br><br>
+		</article>
+	</div>
+
+<!--------------->
+<!-- A SOURCE1 -->
+<!--------------->
+<div id="aca-1"></div>
+	<div id="page2">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+            <h3><b>Anaheim's Innovative Mentoring Experience (AIME)</b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">
+				<a href="https://aimeauhsd.wixsite.com/aime" target="_blank"><img id="picture" src="/resources/logo08.png"></a>
+            </section>
+            <p> <b>Contact person: </b> MJ Cooke Elliott <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-999-3794"> 714-999-3794 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://aimeauhsd.wixsite.com/aime/" target="_blank"> www.aimeauhsd.wixsite.com/aime/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: cooke_m@auhsd.us" target="_blank"> cooke_m@auhsd.us </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=501 N. Crescent Way Anaheim, CA 92801" target="_blank"> 501 N. Crescent Way Anaheim, CA 92801 </a><br>
+                <b>Hours:</b> Office is open Monday - Friday, 8am - 3pm <br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> provides career mentoring and internship opportunities<br>
+                <b>District partnership:</b> yes, <a id="socialmedia" href="https://www.auhsd.us/" target="_blank"> AUHSD </a>
+				
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For students who want to explore careers in engineering, biomedical science, medical careers, finance, construction, cybersecurity-AI, and computer science, contact MJ Cooke Elliott at AIME. AIME provides students in the Anaheim Union High School District (AUHSD) with career mentoring, and internship experiences that will enhance their college, career, and life-readiness skills. AIME receives its support through Partners, volunteer, and the AIME Alumni Association. For inquiries, AIME is available Monday to Friday from 8am to 3pm. As of now, there are no additional language accomodations outside of English. There are no fees or costs associated with joining AIME other than donations. AIME does not have a referral system, however students who are interested in furthering their career exploration in the fields listed are encouraged to reach out. The AIME program is for students of all backgrounds and is both a culturally appropriate and important resource for the community.</p>
+				<br><br>	
+                <div class="container-rows" id="contacts-icons">
+                    <a id="socialmedia" href="https://www.instagram.com/aimeauhsd/ " target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+<!--------------->
+<!-- A SOURCE2 -->
+<!--------------->
+<div id="aca-2"></div>
+	<div id="page3">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+			<br><br>	
+            <h3><b>Higher Ground OC </b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">	
+				<a href="https://www.highergroundoc.org/teenprogram" target="_blank"><img id="picture" src="/resources/logo03.jpg"></a>
+            </section>
+            <p> <b>Contact person: </b> Alexis Almaguer <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-833-5087"> 714-833-5087 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.highergroundoc.org/teenprogram" target="_blank"> www.highergroundoc.org/teenprogram </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: info@highergroundoc.org" target="_blank"> info@highergroundoc.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=1535 E. Broadway, Anaheim, CA 92805" target="_blank"> 1535 E. Broadway, Anaheim, CA 92805 </a><br>
+                <b>Hours:</b> Wednesdays, 3:30pm-6pm </a><br>
+                <b>Fees:</b> no fees <br>
+                <b>Services:</b> the teen community is a free, weekly afterschool program with mentor support<br>
+                <b>District partnership:</b> partnered with Lincoln Elementary 
+				<br><br>
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For those looking for a free afterschool program for their teen, contact Alexis Almaguer at Higher Ground. Higher Ground OC's Teen Program holds weekly afterschool sessions that offer activities and learning opportunities with a goal of developing the teens to have excellent social, cognitive, creative, vocational and citizenship comptence. The teen program also offers a mentorship program for teens to gain support from college students and Higher Ground staff. Higher Ground OC encourages staff that have experience with working with K-12 students. A GED or high school diploma is required to apply. Training in risk-assessment and handling teens is also provided for staff to grow familiar with the position. The teen program runs every Wednesdays from 3:30pm to 6:00pm. There are language accomodations for both English and Spanish. Higher Ground OC is also looking into integrating sign language support as well. There are no fees or costs associated with receiving assistance from Higher Ground OC's Teen Program. Schools may refer students who need extra service and care, however students and parents may also join through contacting the program. Higher Ground OC's Teen Program is both a culturally appropriate and important resource for the community. </p>
+            </div>
+		</div>
+        </article>
+	</div>
+<!--------------->
+<!-- MD BANNER -->	
+<!--------------->
+<main>
+	<div id="nav-md"></div>
+	<div class="semifullpage">
+		<div class="banner"></div>
+		<article class="container-split" id="bannercontent">	
+				<h1>Medical & Dental <br>Resources </h1>
+				<br><br>
+		</article>
+	</div>
+
+<!---------------->
+<!-- MD SOURCE1 -->
+<!---------------->
+<div id="md-1"></div>
+	<div id="page2">
+		<div id="inside">
+        <section id="profile-header" class="row1">
+            <h3><b>Planned Parenthood</b></h3>
+        </section>
+		<article class="col-30-70" id="profile" class="row2">
+            <div class="col1">
+			<section id="profile-picture">
+				<a href="https://www.plannedparenthood.org/health-center/california/anaheim/92805/anaheim-health-center-2284-90160" target="_blank"><img id="picture" src="/resources/logo10.png"></a>
+            </section>
+            <p> <b>Contact person: </b> Karen Alvarado <br>
+                <b>Phone:</b><a id="socialmedia" href="tel:714-922-4100"> 714-922-4100 </a><br>
+                <b>Website:</b> <a id="socialmedia" href="https://www.plannedparenthood.org/health-center/california/anaheim/92805/anaheim-health-center-2284-90160" target="_blank"> https://www.plannedparenthood.org/health-center/california/anaheim/92805/anaheim-health-center-2284-90160/ </a> <br>
+                <b>E-mail:</b> <a id="socialmedia" href = "mailto: Development@PPOSBC.org" target="_blank"> Development@PPOSBC.org </a><br>
+                <b>Address:</b><a id="socialmedia" href="http://maps.google.com/?q=303 W. Lincoln Ave. #105 Anaheim ca 92805" target="_blank"> 303 W. Lincoln Ave. #105, Anaheim, CA 92805 </a><br>
+                <b>Hours:</b> Mon-Thurs 7am-6pm, Fri 7am - 5pm, Sat-Sun 6:30am-4:30pm <br>
+                <b>Fees:</b> slide-scale based <br>
+                <b>Services:</b> provides affordable reproductive health care <br>
+                <b>District partnership:</b> Unknown
+				<br><br>
+
+            </p>
+            </div>
+            <div class="col2"
+			<section id="profile-content">
+				<h4><u>About</u></h4>
+                <p>For students or parents in need of either affordable reproductive health care or reproductive health education, contact Karen Alvarado at Planned Parenthood of Anaheim. Planned Parenthood provides services such as birth control, HIV services, contraceptiption, pregnancy testing, hormone therapy, and more for at an affordable price. Planned Parenthood is especially useful for those facing financial difficulties as they will work with both low-income or no-income. The staff at Planned Parenthood consists of medical assistants, reproductive health specialists, and clinicians. A degree and proper licensing is required to apply to be a mdical staff at Planned Parenthood. Planned Parenthood is available on Monday to Thursday from 7am to 6pm, Friday from 7am to 5pm, and Saturday to Sunday from 6:30am to 4:30pm. Planned Parenthood provides language assistance in English and Spanish. Costs are sliding scale-based. Those without insurance or Medicaid may still be eligible for state-funding or a lower fee sclae. Planned Parenthood does not have a referral system, however those in need of reproductive health services or education are encouraged to seek support. Planned Parenthood is both a culturally appropriate and important resource for the community. </p>
+                <br><br>
+				<div class="container-rows" id="contacts-icons">
+					<a id="socialmedia" href="https://twitter.com/PPFA" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a id="socialmedia" href="https://www.facebook.com/PlannedParenthood/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a id="socialmedia" href="Instagram: https://www.instagram.com/plannedparenthood/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+					<a id="socialmedia" href="https://www.youtube.com/user/plannedparenthood" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+				</div>
+            </div>
+		</div>
+        </article>
+	</div>
+
+
+
+	
+	
+<!------------->
+<!-- About -->
+<!------------->
+<div id="nav-a"></div>
+	<div class="quarterpage" id="page3">
 		<article class="container-center" id="contacts">
 			<section id="contacts-heading">
 				<h2>About</h2>
 			</section>
-			<section id="contacts-content">
+			<section id="contacts-content0">
 				<ul id="contacts-list">
 					<p>This website was made as a project for EDCO528: Community/Family/School Collaboration instructed by Dr. Catherine Wallace for Azusa Pacific University's Department of Education. <br>
 					<br>As a disclaimer, the resources listed in this document are not exhaustive, endorsed, recommended, supervised, approved or sponsored by the Anaheim Union High School District (AUHSD). For those referred to programs by the courts, probation and so forth, it is the responsibility of the reader to confirm with the referring agency that the organization chosen is an approved one. The District assumes no liability or responsibility for any loss or injury arising from participation in any program. It merely permits the dissemination of this information because of possible interest by students, families, faculty and the community-at-large.
@@ -121,10 +597,6 @@
 			</section>
 		</article>
 	</div>
-
-	<!-------------->
-	<!-- End HTML -->
-	<!-------------->
 	</main>
 	</body>
 </html>

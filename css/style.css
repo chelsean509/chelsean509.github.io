@@ -50,7 +50,7 @@ h1{
 h2{
 	color: #292929;
 	font-family: 'Quicksand';
-	font-size: 2.438rem;
+	font-size: 6vh;
 	font-weight: 300;
 
 }
@@ -81,23 +81,23 @@ ul {
 
 #socialmedia:hover {
 	transition: all 0.2s ease-in-out 0s;
-	color: #acd595;	
+	color: #E0A000;	
 	transform:scale(1.1);
 }
 
 #socialmedia:focus {
-	color: #acd595;
+	color: #E0A000;
 }
 
 #navoption {
-	box-shadow: inset 0 0 0 0 #acd595;
+	box-shadow: inset 0 0 0 0 #B7D9CE ;
 	margin: 0 -.25rem;
 	padding: 0 .25rem;
 	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 	color:#292929;
   }
 #navoption:hover {
-	background-color: #acd595;
+	background-color: #B7D9CE ;
   }
 
 p {
@@ -154,7 +154,7 @@ p {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 5vh 2vh;
 	z-index: 1;
-	font-size: 3vh;
+	font-size: 2.8vh;
 	flex-direction: column;
 	white-space: break-spaces;
 }
@@ -163,7 +163,7 @@ p {
 	display: block;
   }
 .dropdown-content a:hover {
-	background-color: #acd959;
+	background-color: #B7D9CE ;
 }
 
 /*******************************************
@@ -289,7 +289,7 @@ nav{
 #navbar-home:hover{
 	transform:scale(1.02);
 	transition: all 0.2s ease-in-out 0s;
-	background-color: #acd595;
+	background-color: #B7D9CE ;
 }
 
 #navbar-logo{
@@ -315,7 +315,7 @@ nav{
 }*/
 
 #navoption {
-	box-shadow: inset 0 0 0 0 #acd595;
+	box-shadow: inset 0 0 0 0 #B7D9CE ;
 	margin: 0 -.25rem;
 	padding: 0 .25rem;
 	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -323,7 +323,7 @@ nav{
 	margin-right: 5vh;
   }
 #navoption:hover {
-	background-color: #acd595;
+	background-color: #B7D9CE ;
   }
 
 
@@ -363,11 +363,13 @@ nav{
 	left: 28%;
 	position: absolute;	
 	transform: translate(-50%, -50%);
-
+}
+#intro-content{
+	margin-left: 3vh;
 }
 #bannercontent {	
 	left: 25%;
-	line-height: 3.5rem;
+	line-height: 4rem;
 	position: absolute;	
 	transform: translate(-50%, -350%);
 }
@@ -461,7 +463,7 @@ nav{
 
 #portfolio-list a{
 	position: relative;
-	max-width: 25rem;
+	max-width: 70vh;
 	display: block;
 	cursor: pointer;
 }
